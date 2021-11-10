@@ -19,7 +19,7 @@ RSpec.describe Plot do
 
     visit '/plots'
 
-    expect(page).to have_content(turing_garden.plots.number)
+    expect(page).to have_content(plot1.number)
     expect(page).to have_content(sweet_peas.name)
     expect(page).to have_content(peppers.name)
     expect(page).to have_content(carrots.name)
