@@ -33,7 +33,7 @@ RSpec.describe Plot do
 
     visit '/plots'
 
-      within("#plot-#{plot1.id}") do
+      within("#plant-#{sweet_peas.id}") do
         expect(page).to have_content(sweet_peas.name)
         click_link 'Remove Plant'
       end

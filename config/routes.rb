@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  get '/plots',             to: 'plots#index'
+  get 'gardens/:id',        to: 'gardens#show'
 
-  get 'plots/:id/plants',   to: 'plot_plants#destroy'
+  get '/plots',            to: 'plots#index'
+
+  get 'plots/:id/plant',   to: 'plot_plants#destroy'
 end
